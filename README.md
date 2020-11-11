@@ -49,8 +49,8 @@ The amount of S required depends on the $tolerance given by the caller along wit
 
 ### Lack of Bezier Curve Input
 
-J aiming    always create bezier curves in the screen, otherwise S.
-J movements always create bezier curves in the player, otherwise S.
+J aiming    always create bezier curves in the screen, otherwise S is issued.
+J movements always create bezier curves in the player, otherwise S is issued.
 
 ### Too many Directional input
 J can't get 2 or more different directions at the same time (left and right),
@@ -81,8 +81,9 @@ M small spans let players to shot with more ease and speed, when the player has 
 fast-shot we give him an S
 
 ### Lack of control sensivility
-All buttons on a console control have certain ammount of pressure sensivity, keyboard doesn't have any.
-If any input (walk, crouch, jump, shoot) are sent without proportional sensivity, and S is issued.
+All buttons on a console control have certain ammount of pressure sensivity, M and K doesn't have any.
+If any input (walk, crouch, jump, shoot) are sent without proportional sensivity, an S is issued.
+Also, if sensivity is "unnatural" (coded) or it's always the same, S is issued.
 
 ### Score
 
