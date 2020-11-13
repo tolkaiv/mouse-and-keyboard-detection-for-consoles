@@ -58,8 +58,8 @@ if more than 1 input is received, S.
 
 ### Inconsistent maximum acceleration or speed
 
-J has a maximum speed at certain sensibility, this speed should NOT be exceeded.
-J has a maximum acceleration rate at certain sensibility, this acceleration should NOT be exceeded.
+J has a maximum "turning" speed at certain sensibility, this speed should NOT be exceeded.
+J has a maximum "turning" acceleration rate at certain sensibility, this acceleration should NOT be exceeded.
 NOTE: Max speed and acceleration can be calculated when the player is turning around while walking off-action.
 
 ### Lack of Inertia
@@ -72,6 +72,12 @@ Some bad adapters make M "jitters" (constant random direction input), if one sin
 
 When a player aims ~45deg or more and get a frag in a very short period of time without "preshooting", and S is issued.
 With a J, this can only be achieved a with a great ammount of luck.
+
+### Sight sensivility too high
+
+If the substraction (difference) of normal and down sight sensivities is too small, an S is issued.
+This is because aiming in a console requires less sensivity down sight but it's not a problem while using a M.
+These numbers are based in max turning speed (inconsistent with M).
 
 ### Great speeds at Single Fire
 
